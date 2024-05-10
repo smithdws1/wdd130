@@ -62,7 +62,6 @@ h1 {
 
 main {
     max-width: 840px;
-    float: right;
 }
 
 main img {
@@ -70,6 +69,7 @@ main img {
     height: auto;
     border: 1px solid steelblue;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
