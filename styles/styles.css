@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -37,20 +42,20 @@ p {
 }
 
 aside {
-    width: 20rem;
+    width: 40rem;
     text-align: center;
     position: relative;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 200px;
 }
 
 aside h2 {
     position: absolute;
-    top: 12px;
-    left: 130px;
+    top: 140px;
+    left: 550px;
     text-align: center;
 }
 
