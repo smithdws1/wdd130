@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
@@ -40,7 +40,7 @@ nav a {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 150px auto 0;
     padding: 2rem 1rem;
 }
 
@@ -59,17 +59,19 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: white;
+    z-index: 1;
 }
 
 article {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem;
     width: 100%;
+    color: white;
+    z-index: 1;
 }
 
 article img {
