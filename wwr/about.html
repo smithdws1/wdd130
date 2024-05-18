@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Thumbthrottle Whitewater Rafting</title>
-    <meta name="description"
-        content="I am David Smith. This is for Course WDD130. I am learning to program HTML and JavaScript.">
+    <meta name="description" content="I am David Smith. This is for Course WDD130. I am learning to program HTML and JavaScript.">
     <meta name="author" content="David Smith">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/logo.jpg" alt="Rafting Logo">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Rafting Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -26,22 +27,44 @@
         <div class="hero">
             <img src="images/hero_transparency_1024.png" alt="Rafting Adventure">
             <h1>Thumbthrottle Whitewater Rafting</h1>
-                <article>
-                    <img src="images/h1-img.jpg" alt="Happy Client">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </article>
+            <article>
+                <img src="images/h1-img.jpg" alt="Happy Client">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </article>
         </div>
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="history-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <img src="images/history.jpg" alt="Historical Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
         </section>
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting14_600.jpg" alt="Rafting Adventures">
-            <img src="images/rafting17_600.jpg" alt="Real Rafting Adventures">
-            <img src="images/rafting21_600.png" alt="Family Rafting Adventures">
-            <img src="images/rafting32_600.jpg" alt="Team Rafting Adventures">
-            <img src="images/salmon-kayak2.jpg" alt="Solo Rafting Adventures">
+            <figure>
+                <img src="images/rafting14_600.jpg" alt="Rafting Adventures">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting17_600.jpg" alt="Real Rafting Adventures">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting21_600.png" alt="Family Rafting Adventures">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting32_600.jpg" alt="Team Rafting Adventures">
+                <figcaption>Overnight Expedition</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salmon-kayak2.jpg" alt="Solo Rafting Adventures">
+                <figcaption>Solo Kayak Fun</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
