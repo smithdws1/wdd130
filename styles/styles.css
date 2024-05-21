@@ -18,11 +18,8 @@ nav {
 }
 
 nav a {
-    color: white;
     padding: 0.5rem;
-    font-size: 1.2rem;
     display: block;
-    font-weight: 700;
 }
 
 h1 {
