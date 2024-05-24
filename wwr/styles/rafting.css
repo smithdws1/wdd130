@@ -2,9 +2,21 @@
 
 :root {
     --primary-color: #3498db;
+    /* Blue */
     --secondary-color: #2ecc71;
+    /* Green */
     --text-color: #333;
+    /* Dark Gray */
     --light-bg-color: #e0e0e0;
+    /* Light Gray */
+    --header-bg-color: #2980b9;
+    /* Darker Blue */
+    --footer-bg-color: #2c3e50;
+    /* Dark Blue */
+    --link-color: #ffffff;
+    /* White */
+    --hero-text-bg: rgba(0, 0, 0, 0.6);
+    /* Black with 60% opacity */
 }
 
 body {
@@ -12,7 +24,7 @@ body {
     max-width: 960px;
     margin: auto;
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--light-bg-color);
     color: var(--text-color);
 }
 
@@ -21,7 +33,7 @@ header {
     grid-template-columns: auto 1fr;
     gap: 1rem;
     padding: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--header-bg-color);
     color: white;
     align-items: center;
 }
@@ -39,7 +51,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -70,7 +82,7 @@ main {
     color: white;
     z-index: 1;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--hero-text-bg);
     padding: 0.5rem 1rem;
 }
 
@@ -78,7 +90,7 @@ main {
     position: absolute;
     top: 130px;
     left: 500px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     width: 40%;
     z-index: 1;
@@ -93,7 +105,7 @@ main {
 }
 
 .hero article p {
-    color: #333;
+    color: var(--text-color);
     margin-right: 160px;
 }
 
@@ -146,8 +158,8 @@ figcaption {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--footer-bg-color);
+    color: var(--link-color);
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
@@ -163,13 +175,19 @@ footer p {
 .social-links {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .social-links a {
     text-decoration: none;
+    color: var(--link-color);
+    display: flex;
+    align-items: center;
 }
 
-.social-links img {
-    width: 30px;
-    height: auto;
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--link-color);
+    margin-right: 0.5rem;
 }
