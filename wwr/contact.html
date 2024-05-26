@@ -31,7 +31,7 @@
             <p>E-mail: <a href="mailto:wrr@thungthrottlerafting.com">wrr@thumbthrottlerafting.com</a></p>
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.996284869062!2d-111.7786!3d40.4192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8d1d08c964cb%3A0x90e7c1cf1ad0f7d5!2s4903%20W%20Summerfield%20Dr%2C%20Highland%2C%20UT%2084003!5e0!3m2!1sen!2sus!4v1623674517388!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.996284869062!2d-111.7786!3d40.4192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8d1d08c964cb%3A0x90e7c1cf1ad0f7d5!2s4903%20W%20Summerfield%20Dr%2C%20Highland%2C%20UT%2084003!5e0!3m2!1sen!2sus!4v1623674517388!5m2!1sen!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
             </div>
         </section>
         <section class="employee-profiles">
@@ -49,29 +49,37 @@
             </div>            
         </section>
         <section class="contact-form">
-            <form action="submit_contact_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
             
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
             
-                <label>Reason you want to contact us:</label>
-                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                <label for="general">General Inquiry</label><br>
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
-                <label for="reservation">Reservation Question</label><br>
-                <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
-                <label for="website">Website Suggestion</label><br>
+                    <label>Purpose of the message:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
+                        <label for="website">Website Suggestion</label>
+                    </div>
             
-                <label for="message">Please enter your message:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
             
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Subscribe me to the monthly newsletter</label><br>
+                    <div class="radio-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
             
-                <button type="submit">Submit</button>
-            </form>
+                    <button type="submit">Submit</button>
+                </form>
         </section>
     </main>
 

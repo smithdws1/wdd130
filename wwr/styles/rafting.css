@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    max-width: 1200px;
+    max-width: 960px;
     margin: auto;
     padding: 20px;
     background-color: var(--light-bg-color);
@@ -195,23 +195,20 @@ footer p {
     text-align: center;
 }
 
-.contact-info h2 {
-    text-align: left;
-}
 .contact-info p {
     margin: 0.5rem 0;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-info .map {
     margin-top: 1rem;
-    text-align: right;
+    text-align: center;
 }
 
 .employee-profiles {
     display: flex;
     justify-content: space-around;
-    align-items: justify;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
@@ -221,14 +218,21 @@ footer p {
 
 .employee-profiles .profile img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    width: 25%;
     gap: 1rem;
 }
 
@@ -255,6 +259,12 @@ footer p {
     margin-right: 0.5rem;
 }
 
+.contact-form .reason{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .contact-form button {
     margin-top: 10px;
     padding: 10px;
@@ -263,6 +273,8 @@ footer p {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 150px;
+    align-self: center;
 }
 
 .contact-form button:hover {
