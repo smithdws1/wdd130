@@ -191,13 +191,13 @@ footer p {
 
 .contact-info h1 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: black;
     text-align: center;
 }
 
 .contact-info h2 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: black;
     text-align: left;
 }
 .contact-info p {
