@@ -46,39 +46,39 @@
                 <h3>Samuel "Sam" Smith, Guide</h3>
             </div>            
         </section>
-        <section class="contact-form">
-                <form action="submit_contact_form.php" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-            
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-            
-                    <label>Purpose of the message:</label>
-                    <div class="reason">
-                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                        <label for="general">General Inquiry</label><img src="images/question.jpg" class="icon">
-                    </div>
-                    <div class="reason">
-                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
-                        <label for="reservation">Reservation Question</label><img src="images/inquiry.jpg" class="icon">
-                    </div>
-                    <div class="reason">
-                        <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
-                        <label for="website">Website Suggestion</label><img src="images/exclamation.png" class="icon">
-                    </div>
-            
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-            
-                    <div class="reason">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                    </div>
-            
-                    <button type="submit">Submit</button>
-                </form>
-        </section>
+        <div class="contact-form">
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label>Purpose of the message:</label>
+                <div class="reason">
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><img src="images/question.jpg" alt="Question" class="icon">
+                </div>
+                <div class="reason">
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label><img src="images/inquiry.jpg" alt="Inquiry" class="icon">
+                </div>
+                <div class="reason">
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
+                    <label for="website">Website Suggestion</label><img src="images/exclamation.png" alt="suggestion" class="icon">
+                </div>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <div class="reason">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
    <footer>
