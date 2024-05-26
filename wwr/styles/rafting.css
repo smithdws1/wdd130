@@ -2,26 +2,18 @@
 
 :root {
     --primary-color: #3498db;
-    /* Blue */
     --secondary-color: #2ecc71;
-    /* Green */
     --text-color: #333;
-    /* Dark Gray */
     --light-bg-color: #e0e0e0;
-    /* Light Gray */
     --header-bg-color: #2980b9;
-    /* Darker Blue */
     --footer-bg-color: #2c3e50;
-    /* Dark Blue */
     --link-color: #ffffff;
-    /* White */
     --hero-text-bg: rgba(0, 0, 0, 0.6);
-    /* Black with 60% opacity */
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    max-width: 960px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     background-color: var(--light-bg-color);
@@ -203,20 +195,23 @@ footer p {
     text-align: center;
 }
 
+.contact-info h2 {
+    text-align: left;
+}
 .contact-info p {
     margin: 0.5rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-info .map {
     margin-top: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 .employee-profiles {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: justify;
     margin-bottom: 2rem;
 }
 
@@ -226,8 +221,9 @@ footer p {
 
 .employee-profiles .profile img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .contact-form form {
