@@ -180,7 +180,6 @@ footer p {
 .social-links svg {
     width: 24px;
     height: 24px;
-    fill: var(--link-color);
     margin-right: 0.5rem;
 }
 
