@@ -195,14 +195,19 @@ footer p {
     text-align: center;
 }
 
+.contact-info h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: left;
+}
 .contact-info p {
     margin: 0.5rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-info .map {
     margin-top: 1rem;
-    text-align: center;
+    text-align: right;
 }
 
 .employee-profiles {
