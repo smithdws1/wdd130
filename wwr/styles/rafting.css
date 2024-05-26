@@ -198,11 +198,11 @@ footer p {
 .contact-info h2 {
     margin-bottom: 1rem;
     color: black;
-    text-align: left;
+    text-align: right;
 }
 .contact-info p {
     margin: 0.5rem 0;
-    text-align: left;
+    text-align: right;
 }
 
 .contact-info .map {
@@ -270,6 +270,10 @@ footer p {
     gap: 0.5rem;
 }
 
+.contact-form .icon {
+    width: 50px;
+    height: 50px;
+}
 .contact-form button {
     margin-top: 10px;
     padding: 10px;
