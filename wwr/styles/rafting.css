@@ -163,19 +163,15 @@ footer {
 footer p {
     margin: 0;
     color: #ffffff;
-    /* Ensuring high contrast for text */
 }
 
 footer a {
     color: #ffffff;
-    /* Ensuring high contrast for links */
     text-decoration: underline;
-    /* Adding underline to enhance visibility */
 }
 
 footer a:hover {
     color: #cccccc;
-    /* Slightly different hover color for visual feedback */
 }
 
 .social-links {
@@ -187,7 +183,6 @@ footer a:hover {
 .social-links a {
     text-decoration: none;
     color: #ffffff;
-    /* Ensuring high contrast for social links */
     display: flex;
     align-items: center;
 }
@@ -197,7 +192,6 @@ footer a:hover {
     height: 24px;
     margin-right: 0.5rem;
     fill: #ffffff;
-    /* Ensuring high contrast for icons */
 }
 
 .social-links {
