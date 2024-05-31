@@ -162,6 +162,42 @@ footer {
 
 footer p {
     margin: 0;
+    color: #ffffff;
+    /* Ensuring high contrast for text */
+}
+
+footer a {
+    color: #ffffff;
+    /* Ensuring high contrast for links */
+    text-decoration: underline;
+    /* Adding underline to enhance visibility */
+}
+
+footer a:hover {
+    color: #cccccc;
+    /* Slightly different hover color for visual feedback */
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Ensuring high contrast for social links */
+    display: flex;
+    align-items: center;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    fill: #ffffff;
+    /* Ensuring high contrast for icons */
 }
 
 .social-links {
