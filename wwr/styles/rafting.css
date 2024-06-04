@@ -56,15 +56,385 @@ main {
     border-radius: 10px;
 }
 
+.index_hero,
+.about-hero,
+.trip-intro {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.index_hero img,
+.about-hero img,
+.trip-intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.index_hero h1,
+.about-hero h1,
+.trip-intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: var(--hero-text-bg);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.about-hero {
+    position: relative;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.about-hero img.hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-hero h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: var(--hero-text-bg);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.about-hero article {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.about-hero article img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.index-content-grid,
+.about-history-content,
+.trip-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.index-content-left,
+.about-history-content p,
+.trip-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-content-left img,
+.about-history-content img,
+.trip img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.index-newsletter {
+    margin-top: 2rem;
+    background-color: var(--light-bg-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.index-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.index-newsletter label {
+    font-weight: bold;
+}
+
+.index-newsletter input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.index-newsletter button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.index-newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+.cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--link-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #cccccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--link-color);
+    display: flex;
+    align-items: center;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    fill: var(--link-color);
+}
+
+.about-hero article,
+.contact-info,
+.employee-profiles,
+.contact-form,
+.about-history,
+.about-adventures {
+    margin-top: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.contact-info h1,
+.contact-info h2 {
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info .map {
+    margin-top: 1rem;
+}
+
+.contact-info .map iframe {
+    border: 0;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 1rem;
+}
+
+.contact-form label,
+.contact-form .reason label {
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form input[type="radio"]+label {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--light-bg-color);
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.contact-form .reason {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form .reason img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.about-history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-history-content img {
+    width: 800px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.about-adventures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.about-adventures figure {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.about-adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
 .trip-intro {
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.trip-intro h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.trip-intro p {
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
 .trip-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .trip {
@@ -115,58 +485,4 @@ main {
 
 .trip button:hover {
     background-color: var(--secondary-color);
-}
-
-footer {
-    background-color: var(--footer-bg-color);
-    color: var(--link-color);
-    padding: 1rem;
-    text-align: center;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-    color: white;
-}
-
-footer a {
-    color: white;
-    text-decoration: underline;
-}
-
-footer a:hover {
-    color: #cccccc;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: var(--link-color);
-    display: flex;
-    align-items: center;
-}
-
-.social-links svg {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5rem;
-    fill: var(--link-color);
-}
-
-/* Additional Styling for Trip Section */
-.trip-content h2 {
-    color: var(--primary-color);
-}
-
-.trip-content p {
-    margin: 0.5rem 0;
 }
