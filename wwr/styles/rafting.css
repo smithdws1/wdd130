@@ -160,10 +160,12 @@ main {
 }
 
 .index-newsletter {
+    width: 30%;
     margin-top: 2rem;
     background-color: var(--light-bg-color);
     padding: 1rem;
     border-radius: 8px;
+    float: right;
 }
 
 .index-newsletter form {
@@ -197,8 +199,8 @@ main {
 }
 
 .cta {
-    text-align: center;
-    margin-top: 2rem;
+    text-align: left;
+    margin-top: 15rem;
 }
 
 .cta a {
