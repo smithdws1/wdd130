@@ -255,7 +255,6 @@ footer a:hover {
     width: 24px;
     height: 24px;
     margin-right: 0.5rem;
-    fill: var(--link-color);
 }
 
 .about-hero article,
